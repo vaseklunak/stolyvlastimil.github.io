@@ -1,34 +1,93 @@
-[index.html.txt](https://github.com/user-attachments/files/22708726/index.html.txt)
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EpoxyArt – Úvod</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stoly Vlastimil | Epoxidové stoly z masivu</title>
+
+    <style>
+        /* === ZÁKLADNÍ STYL === */
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            color: #fff;
+            background-image: url('https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            text-align: center;
+        }
+
+        /* === HORNÍ NAVIGAČNÍ PANEL === */
+        header {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 22px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #00cc99;
+        }
+
+        /* === OBSAH === */
+        main {
+            padding: 100px 20px;
+            background-color: rgba(0, 0, 0, 0.45);
+            border-radius: 15px;
+            max-width: 900px;
+            margin: 80px auto;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #00ffcc;
+        }
+
+        p {
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 15px;
+            font-size: 16px;
+        }
+    </style>
 </head>
+
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="cenik.html">Ceník</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
 
-<header>
-  <h1>Truhlářství Stoly Vlastimil</h1>
-  <p>Originální stoly z masivu a pryskyřice – česká ruční výroba</p>
-</header>
+    <main>
+        <h1>Stoly Vlastimil</h1>
+        <p>Originální truhlářská práce – masivní stoly zalité epoxidovou pryskyřicí.  
+        Každý kus je jedinečný, ručně vyráběný s důrazem na detail, krásu dřeva a funkčnost.  
+        Inspiraci čerpáme z přírody, která se odráží v každé kresbě našeho dřeva i pryskyřice.</p>
+    </main>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="galerie.html">Galerie</a>
-  <a href="cenik.html">Ceník</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
-
-<section>
-  <h2>Vítejte</h2>
-  <p>Vyrábíme jedinečné stoly z masivu kombinované s epoxidovou pryskyřicí. Každý kus je originál – vytvořen s láskou k přírodě i řemeslu. Naším cílem je spojit estetiku s funkčností a nabídnout Vám kus nábytku, který vydrží po generace.</p>
-</section>
-
-<footer>
-  &copy; 2025 Truhlářství StolyVlastimil | Design & kód: [Václav Luňák]
-</footer>
-
+    <footer>
+        © 2025 Stoly Vlastimil | Česká ruční výroba
+    </footer>
 </body>
 </html>
