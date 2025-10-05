@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EpoxyArt – Galerie</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Galerie našich výrobků</h1>
+  <p>Každý kus je originál – ručně vyráběný z kvalitního dřeva a pryskyřice.</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="galerie.html" style="background:#666;">Galerie</a>
+  <a href="cenik.html">Ceník</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<section>
+  <h2>Naše práce</h2>
+  <p style="text-align:center;">Zde budou fotografie stolů – můžeš je později přidat do složky <code>images/</code> a doplnit jejich popisy.</p>
+
+  <div class="gallery">
+    <img src="images/stul1.jpg" alt="Ukázka produktu">
+    <img src="images/stul2.jpg" alt="Ukázka produktu">
+    <img src="images/stul3.jpg" alt="Ukázka produktu">
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Truhlářství StolyVlastimil
+</footer>
+
+</body>
+</html>
