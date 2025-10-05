@@ -33,3 +33,6 @@
 
 </body>
 </html>
+[cenik.html.txt](https://github.com/user-attachments/files/22708657/cenik.html.txt)
+[galerie.html.txt](https://github.com/user-attachments/files/22708658/galerie.html.txt)[style.css.txt](https://github.com/user-attachments/files/22708660/style.css.txt)
+[kontakt.html.txt](https://github.com/user-attachments/files/22708659/kontakt.html.txt)
