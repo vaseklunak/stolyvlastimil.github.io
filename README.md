@@ -145,9 +145,9 @@ Stoly zalité pryskyřicí s elegantním designem.
     <h2>Kontakt</h2>
     <p style="text-align:center;">Máte zájem o vlastní stůl na míru? Ozvěte se nám!</p>
     <p style="text-align:center;">
-      📞 +420 777 123 456<br>
-      ✉️ info@epoxyart.cz<br>
-      📍 Dílna: Brno, Česká republika
+      📞 +420 736 703 162<br>
+      ✉️ vasiklunak@gmail.com<br>
+      📍 Dílna: Sulice-Hlubočinka, Česká republika
     </p>
   </section>
 
