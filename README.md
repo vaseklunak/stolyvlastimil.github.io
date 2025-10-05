@@ -1,0 +1,34 @@
+[index.html.txt](https://github.com/user-attachments/files/22708726/index.html.txt)
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EpoxyArt – Úvod</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Truhlářství EpoxyArt</h1>
+  <p>Originální stoly z masivu a pryskyřice – česká ruční výroba</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="cenik.html">Ceník</a>
+  <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<section>
+  <h2>Vítejte</h2>
+  <p>Vyrábíme jedinečné stoly z masivu kombinované s epoxidovou pryskyřicí. Každý kus je originál – vytvořen s láskou k přírodě i řemeslu. Naším cílem je spojit estetiku s funkčností a nabídnout Vám kus nábytku, který vydrží po generace.</p>
+</section>
+
+<footer>
+  &copy; 2025 Truhlářství StolyVlastimil | Design & kód: [Václav Luňák]
+</footer>
+
+</body>
+</html>
