@@ -29,28 +29,33 @@ body{
   align-items:center;
   justify-content:space-between;
 }
-.brand{
-  display:flex;
-  align-items:center;
-  gap:14px;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
-.brand .logo{
-  width:46px;
-  height:46px;
-  border-radius:8px;
-  background:linear-gradient(135deg,var(--accent),var(--accent-dark));
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:900;
-  color:#e0d9c1;
-  box-shadow:0 4px 12px rgba(0,0,0,0.4);
+
+.brand img {
+  height: 55px;
+  width: auto;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
 }
-.brand h1{margin:0;font-size:20px;letter-spacing:0.6px;color:#fff}
-.nav{
-  display:flex;
-  gap:18px;
-  align-items:center;
+
+.brand img:hover {
+  transform: scale(1.05);
+}
+
+.brand a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.brand h1 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
 }
 .nav a{
   color:var(--muted);
@@ -199,6 +204,7 @@ button[type=submit]:hover{background:var(--accent-dark)}
   .nav{gap:10px}
   .hero-inner{padding:24px}
 }
+
 
 
 
