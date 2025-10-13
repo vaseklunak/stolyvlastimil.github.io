@@ -11,7 +11,7 @@ body{
   margin:0;
   font-family: "Poppins", "Segoe UI", Arial, sans-serif;
   background: url("images/wood.jpg") center/cover fixed no-repeat;
-  color:#917214;
+  color:#e0d9c1;
   line-height:1.5;
   font-weight:700;
   font-size:18px;
@@ -43,7 +43,7 @@ body{
   align-items:center;
   justify-content:center;
   font-weight:900;
-  color:#917214;
+  color:#e0d9c1;
   box-shadow:0 4px 12px rgba(0,0,0,0.4);
 }
 .brand h1{margin:0;font-size:20px;letter-spacing:0.6px;color:#fff}
@@ -199,4 +199,5 @@ button[type=submit]:hover{background:var(--accent-dark)}
   .nav{gap:10px}
   .hero-inner{padding:24px}
 }
+
 
