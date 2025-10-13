@@ -86,11 +86,11 @@ body{
 .hero h2{
   font-size:48px;
   margin:0 0 12px 0;
-  color:#917214;
+  color:#e0d9c1;
   text-shadow:0 6px 20px rgba(0,0,0,0.6);
 }
 .hero p{
-  color:#917214;
+  color:#e6e2d8;
   font-weight:600;
   margin:0 0 20px 0;
   font-size:20px;
@@ -100,7 +100,7 @@ body{
   padding:12px 22px;
   border-radius:8px;
   background:transparent;
-  color:#917214;
+  color:#e6e2d8;
   border:2px solid rgba(255,255,255,0.3);
   text-decoration:none;
   font-weight:800;
@@ -199,5 +199,6 @@ button[type=submit]:hover{background:var(--accent-dark)}
   .nav{gap:10px}
   .hero-inner{padding:24px}
 }
+
 
 
