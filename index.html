@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Stoly Vlastimil — Stoly z masivu & epoxid</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stoly Vlastimil | Truhlářství</title>
   <link rel="stylesheet" href="style.css">
+
   <style>
-    /* Specifický styl jen pro hlavní stránku s videem */
+    /* === VIDEO POZADÍ S EFEKTEM FADE-IN === */
     .video-background {
       position: fixed;
       top: 0;
@@ -15,6 +16,13 @@
       height: 100%;
       object-fit: cover;
       z-index: -2;
+      opacity: 0;
+      animation: fadeInVideo 2.5s ease forwards;
+    }
+
+    @keyframes fadeInVideo {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     .video-overlay {
@@ -26,16 +34,33 @@
       background: rgba(0, 0, 0, 0.55);
       z-index: -1;
     }
+
+    /* Trochu jemnější styl pro text */
+    .hero h2 {
+      animation: fadeInText 2s ease 0.5s forwards;
+      opacity: 0;
+    }
+    .hero p, .cta {
+      animation: fadeInText 3s ease 1s forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 
 <body>
 
+  <!-- === VIDEO NA POZADÍ === -->
   <video autoplay muted loop playsinline class="video-background">
     <source src="videos/les.mp4" type="video/mp4">
   </video>
   <div class="video-overlay"></div>
 
+  <!-- === HLAVIČKA === -->
   <header class="header">
     <div class="brand">
       <div class="logo">SV</div>
@@ -43,46 +68,35 @@
     </div>
 
     <nav class="nav">
-      <a href="index.html">Home</a>
+      <a href="index.html" style="background:rgba(255,255,255,0.1);">Home</a>
       <a href="galerie.html">Galerie</a>
       <a href="cenik.html">Ceník</a>
       <a href="kontakt.html">Kontakt</a>
     </nav>
   </header>
 
-  <section class="hero" style="background-image:url('images/hero.jpg')">
+  <!-- === ÚVODNÍ SEKCE === -->
+  <section class="hero">
     <div class="hero-inner">
-      <h2>Stoly Vlastimil — Nábytek z masivu a pryskyřice</h2>
-      <p>Originální stoly ručně vyráběné v Česku. Dřevo, pryskyřice a příroda v dokonalé harmonii.</p>
-      <a class="cta" href="kontakt.html">Kontaktujte nás</a>
+      <h2>Stoly Vlastimil</h2>
+      <p>Ručně vyráběné stoly z masivního dřeva a epoxidové pryskyřice.<br>
+      Každý kus je originál inspirovaný přírodou.</p>
+      <a href="kontakt.html" class="cta">Kontaktujte nás</a>
     </div>
   </section>
 
+  <!-- === SEKCE O NÁS === -->
   <section class="section">
     <h3>O nás</h3>
-    <p>Jsme malá dílna zaměřená na výrobu jídelních a designových stolů z masivu zalitých barevnou epoxidovou pryskyřicí. Každý kus je unikát — od výběru dřeva až po finální leštění.</p>
-  </section>
-
-  <section class="section" style="margin-top:24px">
-    <h3>Vybrané práce</h3>
-    <div class="gallery-grid">
-      <img src="images/obrázek1.jpg" alt="Ukázka 1">
-      <img src="images/obrázek2.jpg" alt="Ukázka 2">
-      <img src="images/obrázek3.jpg" alt="Ukázka 3">
-      <img src="images/obrázek4.jpg" alt="Ukázka 4">
-    </div>
-  </section>
-
-  <section class="section" style="margin-top:24px">
-    <h3>Máte zájem?</h3>
-    <p>Vyplňte krátký formulář v sekci Kontakt a my se Vám ozveme s návrhem a orientační cenou.</p>
-    <div style="text-align:center;margin-top:12px;">
-      <a class="cta" href="kontakt.html">Odeslat poptávku</a>
-    </div>
+    <p>
+      Jsme dva mladí kluci s velkým snem. Vyrábíme stoly, které propojují krásu dřeva a moderní design.
+      Každý výrobek tvoříme s důrazem na kvalitu, detail a přirozenost materiálu.
+      Věříme, že i kus dřeva může vyprávět příběh – a my Vám pomáháme ho slyšet.
+    </p>
   </section>
 
   <footer class="footer">
-    © 2025 Stoly Vlastimil — Truhlářství | Tel: +420 736 703 162 | vasiklunak@gmail.com
+    © 2025 Stoly Vlastimil | Česká ruční výroba
   </footer>
 
 </body>
