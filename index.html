@@ -3,21 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Stoly Vlastimil | Truhlářství </title>
+  <title>Stoly Vlastimil | Truhlářství</title>
   <link rel="stylesheet" href="style.css">
 
   <style>
+    /* Přepis malých částí style.css speciálně pro hlavní stránku */
     .hero {
       min-height: 60vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-image: url('images/les.JPG');
+      background-image: url('images/les.png');
       background-size: cover;
       background-position: center;
       position: relative;
     }
 
+    /* tmavý překryv nad obrázkem, aby byl text čitelný */
     .hero::after {
       content: "";
       position: absolute;
@@ -36,6 +38,7 @@
       border-radius: 10px;
     }
 
+    /* fade-in pro text (stejné animace jako předtím) */
     .hero-inner h2 {
       font-size: 48px;
       margin: 0 0 12px 0;
@@ -57,6 +60,7 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
+    /* zjemnění CTA (pokud máš definováno v style.css, můžeš přeskočit) */
     .cta {
       display: inline-block;
       margin-top: 14px;
@@ -70,13 +74,13 @@
     }
     .cta:hover { background: var(--accent); color: #111; border-color: var(--accent); }
 
+    /* drobné responzivní úpravy */
     @media (max-width:800px){
       .hero-inner h2 { font-size: 34px; }
       body { font-size: 16px; }
       .hero-inner { padding: 22px; }
     }
-
-    /* === STYL PRO LOGO === */
+/* === STYL PRO LOGO === */
     .brand {
       display: flex;
       align-items: center;
@@ -111,10 +115,7 @@
 
   <header class="header">
     <div class="brand">
-      <!-- LOGO ODKAZUJÍCÍ NA HOME -->
-      <a href="index.html">
-        <img src="images/logo.jpg" alt="Logo Stoly Vlastimil">
-      </a>
+      <div class="logo">SV</div>
       <h1>Stoly Vlastimil</h1>
     </div>
 
@@ -138,9 +139,9 @@
   <section class="section">
     <h3>O nás</h3>
     <p>
-      Jsme dva mladí kluci, kteří mají velký sen. Vyrábět stoly, které propojují krásu dřeva a moderní design.
+      Jsme dva mladí kluci s velkým snem. Vyrábíme stoly, které propojují krásu dřeva a moderní design.
       Každý výrobek tvoříme s důrazem na kvalitu, detail a přirozenost materiálu.
-      Věříme, že i kus dřeva může vyprávět příběh – a my Vám pomáháme tento příběh prožít!
+      Věříme, že i kus dřeva může vyprávět příběh – a my Vám pomáháme tento příběh prožít.
     </p>
   </section>
 
@@ -150,4 +151,3 @@
 
 </body>
 </html>
-
