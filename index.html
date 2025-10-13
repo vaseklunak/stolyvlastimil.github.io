@@ -19,7 +19,6 @@
       position: relative;
     }
 
-    /* tmavý překryv nad obrázkem, aby byl text čitelný */
     .hero::after {
       content: "";
       position: absolute;
@@ -38,7 +37,6 @@
       border-radius: 10px;
     }
 
-    /* fade-in pro text (stejné animace jako předtím) */
     .hero-inner h2 {
       font-size: 54px;
       margin: 0 0 14px 0;
@@ -60,7 +58,6 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* zjemnění CTA */
     .cta {
       display: inline-block;
       margin-top: 14px;
@@ -74,14 +71,13 @@
     }
     .cta:hover { background: var(--accent); color: #111; border-color: var(--accent); }
 
-    /* drobné responzivní úpravy */
     @media (max-width:800px){
       .hero-inner h2 { font-size: 34px; }
       body { font-size: 16px; }
       .hero-inner { padding: 22px; }
     }
 
-    /* === STYL PRO LOGO (správně umístěný v CSS) === */
+    /* === STYL PRO LOGO === */
     .brand {
       display: flex;
       align-items: center;
@@ -113,12 +109,82 @@
       margin: 0;
     }
 
+    /* === NOVÁ SEKCE KDO JSME === */
+    .team {
+      padding: 70px 20px;
+      text-align: center;
+      color: #fff;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .team h3 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #f5f5f5;
+    }
+
+    .person {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 60px;
+      flex-wrap: wrap;
+    }
+
+    .person.reverse {
+      flex-direction: row-reverse;
+    }
+
+    .person img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.2);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .person img:hover {
+      transform: scale(1.05);
+    }
+
+    .person-text {
+      max-width: 600px;
+      text-align: left;
+    }
+
+    .person-text h4 {
+      font-size: 26px;
+      margin-bottom: 10px;
+      color: #ffd700;
+    }
+
+    .person-text p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #eee;
+    }
+
+    @media (max-width: 800px) {
+      .person {
+        flex-direction: column;
+        text-align: center;
+      }
+      .person.reverse {
+        flex-direction: column;
+      }
+      .person-text {
+        text-align: center;
+      }
+    }
+
   </style>
 </head>
 <body>
 
   <header class="header">
-    <!-- ZDE JE SPRÁVNĚ UMÍSTĚNÉ LOGO JAKO ODKAZ NA HOME -->
     <div class="brand">
       <a href="index.html" aria-label="Přejít na hlavní stránku">
         <img src="images/logo.jpg" alt="Logo Stoly Vlastimil">
@@ -152,77 +218,40 @@
     </p>
   </section>
 
+  <!-- 🔹 NOVÁ SEKCE KDO JSME -->
   <section class="team">
-.team {
-  padding: 70px 20px;
-  text-align: center;
-  color: #fff;
-  background: rgba(255,255,255,0.05);
-}
+    <h3>Kdo jsme</h3>
 
-.team h3 {
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #f5f5f5;
-}
+    <div class="person">
+      <img src="images/vlasta.jpg" alt="Vlastimil Medřický">
+      <div class="person-text">
+        <h4>Vlastimil Medřický</h4>
+        <p>
+          Jmenuji se Vlastimil Medřický a po ukončení studia truhláře jsem začal pracovat na rodinné farmě. 
+          Do toho se stále věnuji mému koníčku – truhlařině – a stále se v ní snažím vzdělávat. 
+          Moderní doba si žádá nové techniky, a zalévání mohutných planěk dřeva pryskyřicí mi otevřelo svět plný kreativity. 
+          Tvoření z masivního dřeva a pryskyřice mě natolik pohltilo, že jsem se pustil do několika projektů současně. 
+          Ve firmě zastávám většinu řemeslné práce a dávám tvar každému kusu dřeva, který projde našima rukama.
+        </p>
+      </div>
+    </div>
 
-.person {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  margin-bottom: 60px;
-  flex-wrap: wrap;
-}
+    <div class="person reverse">
+      <img src="images/vasek.jpg" alt="Václav Luňák">
+      <div class="person-text">
+        <h4>Václav Luňák</h4>
+        <p>
+          Mé jméno je Václav Luňák. Po dostudování magisterského studia na Univerzitě Karlově v oboru učitelství 
+          jsem stále hledal, jak propojit tvořivost, vzdělávání a podnikání. Učení mě baví, 
+          ale vždy jsem chtěl mít i něco vlastního – něco, co roste pod rukama. 
+          Myšlenka vyrábět stoly z masivního dřeva a pryskyřice vznikla z nadšení a přátelství. 
+          Ve firmě se starám o objednávky, marketing, design, administrativu i logistiku. 
+          Společně s Vlastou tvoříme značku, která spojuje poctivou ruční práci a moderní přístup.
+        </p>
+      </div>
+    </div>
+  </section>
 
-.person.reverse {
-  flex-direction: row-reverse;
-}
-
-.person img {
-  width: 220px;
-  height: 220px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid rgba(255,255,255,0.2);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-  transition: transform 0.3s ease;
-}
-
-.person img:hover {
-  transform: scale(1.05);
-}
-
-.person-text {
-  max-width: 600px;
-  text-align: left;
-}
-
-.person-text h4 {
-  font-size: 26px;
-  margin-bottom: 10px;
-  color: #ffd700;
-}
-
-.person-text p {
-  font-size: 18px;
-  line-height: 1.6;
-  color: #eee;
-}
-
-@media (max-width: 800px) {
-  .person {
-    flex-direction: column;
-    text-align: center;
-  }
-  .person.reverse {
-    flex-direction: column;
-  }
-  .person-text {
-    text-align: center;
-  }
-}
- </section>
   <footer class="footer">
     © 2025 Stoly Vlastimil | Česká ruční výroba
   </footer>
