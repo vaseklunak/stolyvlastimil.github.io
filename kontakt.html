@@ -1,46 +1,61 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EpoxyArt – Kontakt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Kontakt — Stoly Vlastimil</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Kontakt a objednávka</h1>
-  <p>Máte zájem o stůl na míru? Napište nám.</p>
-</header>
+  <header class="header">
+    <div class="brand">
+      <div class="logo">SV</div>
+      <h1>Stoly Vlastimil</h1>
+    </div>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="galerie.html">Galerie</a>
-  <a href="cenik.html">Ceník</a>
-  <a href="kontakt.html" style="background:#666;">Kontakt</a>
-</nav>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="cenik.html">Ceník</a>
+      <a href="kontakt.html" style="background:rgba(255,255,255,0.06);">Kontakt</a>
+    </nav>
+  </header>
 
-<section>
-  <h2>Kontaktní formulář</h2>
-  <p style="text-align:center;">Vyplňte formulář a my se vám ozveme s nezávaznou nabídkou.</p>
+  <section class="hero" style="background-image:url('images/hero-wood.jpg')">
+    <div class="hero-inner">
+      <h2>Kontakt</h2>
+      <p>Pošlete nám poptávku — ozveme se co nejdřív s orientační cenou a termínem.</p>
+    </div>
+  </section>
 
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <input type="text" name="Jméno" placeholder="Vaše jméno" required>
-    <input type="email" name="Email" placeholder="Váš e-mail" required>
-    <textarea name="Zpráva" rows="5" placeholder="Popište, o jaký stůl máte zájem..." required></textarea>
-    <button type="submit">Odeslat</button>
-  </form>
+  <section class="section">
+    <h3>Odeslat poptávku</h3>
+    <p>Vyplňte základní údaje a popis (rozměry, typ dřeva, barva pryskyřice).</p>
 
-  <p style="text-align:center; margin-top:20px;">
-    📞 +420 736703162<br>
-    ✉️ vasiklunak@gmail.com<br>
-    📍 Sulice-Hlubočinka, Česká republika
-  </p>
-</section>
+    <!-- FORM: zaregistruj se na Formspree a vlož svůj form ID -->
+    <form class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <input type="text" name="name" placeholder="Vaše jméno" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <select name="type">
+        <option value="">Vyberte typ stolu</option>
+        <option value="kavovy">Kávový stůl</option>
+        <option value="jidelni">Jídelní stůl</option>
+        <option value="konferencni">Konferenční stolek</option>
+        <option value="jiny">Jiný</option>
+      </select>
+      <textarea name="message" rows="6" placeholder="Popište svůj požadavek (rozměry, dřevo, barva...)" required></textarea>
+      <button type="submit">Odeslat poptávku</button>
+    </form>
 
-<footer>
-  &copy; 2025 Truhlářství StolyVlastimil
-</footer>
+    <p style="text-align:center;margin-top:18px;color:#333">
+      📞 +420 736 703 162 — ✉️ vasiklunak@gmail.com — Dílna: 📍 Sulice-Hlubočinka, Česká republika
+    </p>
+  </section>
+
+  <footer class="footer">
+    © 2025 Stoly Vlastimil
+  </footer>
 
 </body>
 </html>
