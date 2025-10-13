@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EpoxyArt – Ceník</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ceník — Stoly Vlastimil</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Ceník</h1>
-  <p>Každý stůl vyrábíme individuálně podle přání klienta.</p>
-</header>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="galerie.html">Galerie</a>
-  <a href="cenik.html" style="background:#666;">Ceník</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
-
-<section>
-  <h2>Nabídka stolů</h2>
-  <p style="text-align:center;">Zde později přidáš produkty s jejich názvy, popisem a cenami.</p>
-
-  <div class="price-list">
-    <!-- Příklad, který můžeš později okomentovat -->
-    <!--
-    <div class="product">
-      <h3>Kávový stůl „Modrá řeka“</h3>
-      <p>Rozměry: 100×60 cm</p>
-      <strong>12 900 Kč</strong>
+  <header class="header">
+    <div class="brand">
+      <div class="logo">SV</div>
+      <h1>Stoly Vlastimil</h1>
     </div>
-    -->
-  </div>
-</section>
 
-<footer>
-  &copy; 2025 Truhlářství StolyVlastimil
-</footer>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="cenik.html" style="background:rgba(255,255,255,0.06);">Ceník</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <section class="hero" style="background-image:url('images/hero.jpg')">
+    <div class="hero-inner">
+      <h2>Ceník orientačně</h2>
+      <p>Ceny jsou orientační — každý projekt naceníme podle materiálu a rozsahu práce.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Vzory a orientační ceny</h3>
+    <p>Zde můžeš později přidat konkrétní produkty (název, rozměr, popis, cena). Níže je ukázka karty.</p>
+
+    <div class="price-grid">
+      <!-- Příklad produktu — odkomentuj a uprav podle potřeby -->
+      <div class="card">
+        <h4>Kávový stůl „Modrá řeka“</h4>
+        <p>Rozměry: 100 × 60 cm — Ořech + modrá epoxidová pryskyřice</p>
+        <div class="price">12 900 Kč</div>
+      </div>
+
+      <div class="card">
+        <h4>Jídelní stůl „Ořechová vlna“</h4>
+        <p>Rozměry: 180 × 90 cm — Ořech + čirá epoxidová výplň</p>
+        <div class="price">29 900 Kč</div>
+      </div>
+
+      <div class="card">
+        <h4>Konferenční stolek „Zelený les“</h4>
+        <p>Rozměry: 120 × 70 cm — Smrk/borovice + zelený pigment</p>
+        <div class="price">17 900 Kč</div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 Stoly Vlastimil
+  </footer>
 
 </body>
 </html>
