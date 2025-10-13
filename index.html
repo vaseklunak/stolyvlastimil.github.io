@@ -5,8 +5,36 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Stoly Vlastimil — Stoly z masivu & epoxid</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Specifický styl jen pro hlavní stránku s videem */
+    .video-background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+    }
+
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.55);
+      z-index: -1;
+    }
+  </style>
 </head>
+
 <body>
+
+  <video autoplay muted loop playsinline class="video-background">
+    <source src="videos/les.mp4" type="video/mp4">
+  </video>
+  <div class="video-overlay"></div>
 
   <header class="header">
     <div class="brand">
