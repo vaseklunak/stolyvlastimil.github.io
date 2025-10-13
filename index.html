@@ -60,7 +60,7 @@
       to   { opacity: 1; transform: translateY(0); }
     }
 
-    /* zjemnění CTA (pokud máš definováno v style.css, můžeš přeskočit) */
+    /* zjemnění CTA */
     .cta {
       display: inline-block;
       margin-top: 14px;
@@ -80,21 +80,49 @@
       body { font-size: 16px; }
       .hero-inner { padding: 22px; }
     }
-/* === STYL PRO LOGO === */
-    <div class="brand">
-  <a href="index.html">
-    <img src="images/logo.jpg" alt="Logo Stoly Vlastimil">
-  </a>
-  <h1>Stoly Vlastimil</h1>
-</div>
+
+    /* === STYL PRO LOGO (správně umístěný v CSS) === */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand a {
+      display: inline-flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .brand img {
+      height: 55px;
+      width: auto;
+      border-radius: 6px;
+      transition: transform 0.2s ease;
+      display: block;
+    }
+
+    .brand img:hover {
+      transform: scale(1.03);
+    }
+
+    .brand h1 {
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin: 0;
+    }
 
   </style>
 </head>
 <body>
 
   <header class="header">
+    <!-- ZDE JE SPRÁVNĚ UMÍSTĚNÉ LOGO JAKO ODKAZ NA HOME -->
     <div class="brand">
-      <div class="logo">SV</div>
+      <a href="index.html" aria-label="Přejít na hlavní stránku">
+        <img src="images/logo.jpg" alt="Logo Stoly Vlastimil">
+      </a>
       <h1>Stoly Vlastimil</h1>
     </div>
 
