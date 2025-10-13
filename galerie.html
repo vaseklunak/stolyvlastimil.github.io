@@ -1,40 +1,50 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EpoxyArt – Galerie</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Galerie — Stoly Vlastimil</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header>
-  <h1>Galerie našich výrobků</h1>
-  <p>Každý kus je originál – ručně vyráběný z kvalitního dřeva a pryskyřice.</p>
-</header>
+  <header class="header">
+    <div class="brand">
+      <div class="logo">SV</div>
+      <h1>Stoly Vlastimil</h1>
+    </div>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="galerie.html" style="background:#666;">Galerie</a>
-  <a href="cenik.html">Ceník</a>
-  <a href="kontakt.html">Kontakt</a>
-</nav>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="galerie.html" style="background:rgba(255,255,255,0.06);">Galerie</a>
+      <a href="cenik.html">Ceník</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
 
-<section>
-  <h2>Naše práce</h2>
-  <p style="text-align:center;">Zde budou fotografie stolů – můžeš je později přidat do složky <code>images/</code> a doplnit jejich popisy.</p>
+  <section class="hero" style="background-image:url('images/hero-wood.jpg')">
+    <div class="hero-inner">
+      <h2>Galerie</h2>
+      <p>Prohlédněte si ukázky našich stolů a detailů pryskyřice.</p>
+    </div>
+  </section>
 
-  <div class="gallery">
-    <img src="images/stul1.jpg" alt="Ukázka produktu">
-    <img src="images/stul2.jpg" alt="Ukázka produktu">
-    <img src="images/stul3.jpg" alt="Ukázka produktu">
-  </div>
-</section>
+  <section class="section">
+    <h3>Naše práce</h3>
+    <p>Zde doplníte více fotografií — nahrajte do složky <code>images/</code> a doplňte názvy do kódu.</p>
 
-<footer>
-  &copy; 2025 Truhlářství StolyVlastimil
-</footer>
+    <div class="gallery-grid" style="margin-top:16px;">
+      <img src="images/gallery1.jpg" alt="Galerie 1">
+      <img src="images/gallery2.jpg" alt="Galerie 2">
+      <img src="images/gallery3.jpg" alt="Galerie 3">
+      <img src="images/gallery4.jpg" alt="Galerie 4">
+      <!-- Přidejte další <img> podle potřeby -->
+    </div>
+  </section>
+
+  <footer class="footer">
+    © 2025 Stoly Vlastimil
+  </footer>
 
 </body>
 </html>
-
