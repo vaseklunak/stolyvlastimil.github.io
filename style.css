@@ -14,7 +14,7 @@ body{
   color:#e0d9c1;
   line-height:1.5;
   font-weight:700;
-  font-size:18px;
+  font-size:20px;
 }
 
 /* --- horní menu --- */
@@ -60,7 +60,7 @@ body{
 .nav a{
   color:var(--muted);
   text-decoration:none;
-  padding:8px 12px;
+  padding:10px 14px;
   border-radius:6px;
   transition:all .18s;
 }
@@ -90,7 +90,7 @@ body{
 }
 .hero h2{
   font-size:48px;
-  margin:0 0 12px 0;
+  margin:0 0 14px 0;
   color:#e0d9c1;
   text-shadow:0 6px 20px rgba(0,0,0,0.6);
 }
@@ -98,11 +98,11 @@ body{
   color:#e6e2d8;
   font-weight:600;
   margin:0 0 20px 0;
-  font-size:20px;
+  font-size:22px;
 }
 .cta{
   display:inline-block;
-  padding:12px 22px;
+  padding:14px 24px;
   border-radius:8px;
   background:transparent;
   color:#e6e2d8;
@@ -156,7 +156,7 @@ body{
 }
 .card h4{margin:0 0 8px 0;color:var(--accent)}
 .card p{margin:0 0 12px 0;}
-.card .price{font-size:20px;font-weight:900;color:var(--accent)}
+.card .price{font-size:22px;font-weight:900;color:var(--accent)}
 
 /* contact form */
 .form{
@@ -171,7 +171,7 @@ input, textarea, select{
   border-radius:6px;
   border:1px solid rgba(255,255,255,0.3);
   font-weight:700;
-  font-size:16px;
+  font-size:18px;
   background:rgba(255,255,255,0.1);
   color:#917214;
 }
@@ -204,6 +204,7 @@ button[type=submit]:hover{background:var(--accent-dark)}
   .nav{gap:10px}
   .hero-inner{padding:24px}
 }
+
 
 
 
